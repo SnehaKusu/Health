@@ -1,0 +1,24 @@
+<div class="container patient-container">
+    <h2 class="text-center mb-4">Patient List</h2>
+    <div class="card patient-card">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let patient of patients">
+            <td>{{ patient.name }}</td>
+            <td>{{ patient.age }}</td>
+            <td>
+              <button class="btn btn-success view-button">View Recommendations</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
